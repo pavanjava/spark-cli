@@ -1,0 +1,22 @@
+{
+  "name": "spark-cli",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Pavan Mantha (https://github.com/pavanjava)",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "bin": {
+    "spark": "./bin/index.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "cli-spinner": "^0.2.10",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "yargs": "^16.1.0"
+  }
+}
