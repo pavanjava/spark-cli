@@ -74,7 +74,7 @@ inquirer
                         yarnCreateProject();
                     } else if (technology.FrontendTechnology === 'ReactApp' && pkgMgrAns === 'npm') {
                         const npmCreateProject = async () => {
-                            await longCommand(`${pkgMgrAns.pkgMgr} create react-app ${projectNme.Name} --template typescript`, () => {
+                            await longCommand(`npx create-react-app ${projectNme.Name} --template typescript`, () => {
                                 stopSpinner()
                                 console.log(`\nproject created successfully! 👍`)
                             })
