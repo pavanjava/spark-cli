@@ -1,6 +1,6 @@
 {
   "name": "spark-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": "Pavan Mantha (https://github.com/pavanjava)",
   "keywords": [],
@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "bin": {
-    "spark": "./bin/index.js"
+    "spark": "bin/runner.js"
   },
   "devDependencies": {},
   "dependencies": {
