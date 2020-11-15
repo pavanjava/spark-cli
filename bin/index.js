@@ -73,7 +73,30 @@ inquirer
                         }
                         yarnCreateProject();
                     } else if (technology.FrontendTechnology === 'ReactApp' && pkgMgrAns === 'npm') {
+                        const npmCreateProject = async () => {
+                            await longCommand(`${pkgMgrAns.pkgMgr} create react-app ${projectNme.Name} --template typescript`, () => {
+                                stopSpinner()
+                                console.log(`\nproject created successfully! 👍`)
+                            })
+                        }
+                        npmCreateProject();
 
+                    } else if (technology.FrontendTechnology === 'AngularApp' && pkgMgrAns.pkgMgr === 'yarn') {
+                        const yarnCreateAngularProject = async () => {
+                            await longCommand(`ng new ${projectNme.Name}`, () => {
+                                stopSpinner()
+                                console.log(`\nproject created successfully! 👍`)
+                            })
+                        }
+                        yarnCreateAngularProject();
+                    } else if (technology.FrontendTechnology === 'AngularApp' && pkgMgrAns.pkgMgr === 'npm') {
+                        const npmCreateAngularProject = async () => {
+                            await longCommand(`ng new ${projectNme.Name}`, () => {
+                                stopSpinner()
+                                console.log(`\nproject created successfully! 👍`)
+                            })
+                        }
+                        npmCreateAngularProject();
                     } else {
                         console.log('Vue under construct');
                     }
